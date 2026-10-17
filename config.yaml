@@ -1,0 +1,150 @@
+orchestrator:
+  redis:
+    host: localhost
+    port: 6379
+    db: 0
+  max_retries: 3
+  retry_delay: 2
+  workflow_timeout: 3600
+  enable_parallel_execution: true
+
+agents:
+  data_collector:
+    timeout: 30
+    max_connections: 10
+    retry_attempts: 3
+    chunk_size: 1000
+    supported_sources:
+      - api
+      - database
+      - file
+      - stream
+
+  quality_assurance:
+    min_quality_score: 0.8
+    severity_levels:
+      - CRITICAL
+      - HIGH
+      - MEDIUM
+      - LOW
+    anomaly_detection:
+      method: zscore
+      threshold: 3.0
+    validation:
+      check_completeness: true
+      check_accuracy: true
+      check_consistency: true
+
+  data_processor:
+    missing_value_strategy: mean
+    normalization_method: standard
+    text_processing:
+      max_length: 512
+      remove_stopwords: true
+      lemmatize: true
+    image_processing:
+      target_size: [224, 224]
+      normalize: true
+
+  analyzer:
+    models:
+      classification: random_forest
+      regression: xgboost
+      sentiment: transformers
+    use_gpu: false
+    cross_validation: true
+    test_size: 0.2
+    hyperparameter_tuning: false
+
+  insight_generator:
+    generation_method: template
+    llm_model: gpt-3.5-turbo
+    max_insights: 10
+    min_confidence: 0.7
+    prioritization:
+      impact_weight: 0.6
+      urgency_weight: 0.4
+
+  visualization:
+    dashboard_port: 8050
+    dashboard_host: 0.0.0.0
+    export_formats:
+      - html
+      - pdf
+      - png
+    theme: plotly_white
+    chart_types:
+      - line
+      - bar
+      - scatter
+      - histogram
+      - heatmap
+      - pie
+
+pipelines:
+  small_structured:
+    max_size_mb: 100
+    processing_mode: single_node
+    agents:
+      - data_collector
+      - quality_assurance
+      - data_processor
+      - analyzer
+      - insight_generator
+      - visualization
+
+  large_structured:
+    min_size_mb: 100
+    processing_mode: distributed
+    agents:
+      - data_collector
+      - quality_assurance
+      - data_processor
+      - analyzer
+      - insight_generator
+      - visualization
+
+  nlp:
+    processing_mode: gpu
+    batch_size: 32
+    agents:
+      - data_collector
+      - quality_assurance
+      - data_processor
+      - analyzer
+      - insight_generator
+      - visualization
+
+  computer_vision:
+    processing_mode: gpu
+    batch_size: 16
+    agents:
+      - data_collector
+      - quality_assurance
+      - data_processor
+      - analyzer
+      - insight_generator
+      - visualization
+
+  streaming:
+    processing_mode: real_time
+    buffer_size: 1000
+    agents:
+      - data_collector
+      - quality_assurance
+      - data_processor
+      - analyzer
+      - visualization
+
+logging:
+  level: INFO
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file: ./logs/app.log
+  max_bytes: 10485760
+  backup_count: 5
+
+performance:
+  enable_caching: true
+  cache_ttl: 3600
+  enable_profiling: false
+  max_memory_gb: 8

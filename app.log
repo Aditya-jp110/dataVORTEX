@@ -1,0 +1,402 @@
+2026-10-07 09:56:13,028 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-11 09:58:01,287 - example - INFO - Sample data created: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-11 09:58:01,294 - agents.orchestrator_agent - INFO - Orchestrator Agent initialized
+2026-10-11 09:58:01,303 - agents.orchestrator_agent - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'size_bytes': 45008, 'source': 'file', 'is_streaming': False, 'file_path': 'C:\\Users\\addy1\\OneDrive\\Documents\\Project\\Travo\\data\\sample_customers.csv'}
+2026-10-11 09:58:01,321 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-11 09:58:01,326 - agents.orchestrator_agent - INFO - Workflow workflow_864581bbb9fc created with pipeline: small_structured
+2026-10-11 09:58:01,331 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-11 09:58:01,333 - agents.data_collector_agent - INFO - Starting task task_collect
+2026-10-11 09:58:01,655 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-11 09:58:01,668 - agents.data_collector_agent - INFO - Reading file: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-11 09:58:01,713 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-11 09:58:01,713 - agents.data_collector_agent - INFO - Task task_collect completed successfully
+2026-10-11 09:58:01,721 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-11 09:58:01,721 - agents.quality_assurance_agent - INFO - Starting task task_qa
+2026-10-11 09:58:01,782 - agents.quality_assurance_agent - INFO - Task task_qa completed successfully
+2026-10-11 09:58:01,786 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-11 09:58:01,786 - agents.data_processor_agent - INFO - Starting task task_process
+2026-10-11 09:58:01,802 - agents.data_processor_agent - INFO - Task task_process completed successfully
+2026-10-11 09:58:01,810 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-11 09:58:01,810 - agents.analyzer_agent - INFO - Starting task task_analyze
+2026-10-11 09:58:25,501 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-11 09:58:25,518 - agents.analyzer_agent - INFO - Task task_analyze completed successfully
+2026-10-11 09:58:25,527 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-11 09:58:25,527 - agents.insight_generator_agent - INFO - Starting task task_insights
+2026-10-11 09:58:25,530 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-11 09:58:25,530 - agents.insight_generator_agent - INFO - Task task_insights completed successfully
+2026-10-11 09:58:25,537 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-11 09:58:25,537 - agents.visualization_agent - INFO - Starting task task_viz
+2026-10-11 09:58:25,576 - agents.visualization_agent - WARNING - No data available for dashboard
+2026-10-11 09:58:25,578 - agents.visualization_agent - INFO - Report created: output\report_20261011_095825.html
+2026-10-11 09:58:25,585 - agents.visualization_agent - INFO - Task task_viz completed successfully
+2026-10-11 09:58:25,587 - agents.visualization_agent - INFO - Created 1 visualizations
+2026-10-11 10:03:17,966 - example - INFO - Sample data created: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-11 10:03:17,972 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-11 10:03:17,972 - agents.data_collector_agent - INFO - Starting task simple_task
+2026-10-11 10:03:17,983 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-11 10:03:17,983 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-11 10:03:17,983 - agents.data_collector_agent - INFO - Reading file: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-11 10:03:18,016 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-11 10:03:18,018 - agents.data_collector_agent - INFO - Task simple_task completed successfully
+2026-10-11 10:03:37,930 - example - INFO - Sample data created: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-11 10:03:37,933 - agents.orchestrator_agent - INFO - Orchestrator Agent initialized
+2026-10-11 10:03:37,939 - agents.orchestrator_agent - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'size_bytes': 45008, 'source': 'file', 'is_streaming': False, 'file_path': 'C:\\Users\\addy1\\OneDrive\\Documents\\Project\\Travo\\data\\sample_customers.csv'}
+2026-10-11 10:03:37,955 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-11 10:03:37,961 - agents.orchestrator_agent - INFO - Workflow workflow_b4aa1f4155c8 created with pipeline: small_structured
+2026-10-11 10:03:37,992 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-11 10:03:38,000 - agents.data_collector_agent - INFO - Starting task task_collect
+2026-10-11 10:03:38,002 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-11 10:03:38,002 - agents.data_collector_agent - INFO - Reading file: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-11 10:03:38,032 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-11 10:03:38,032 - agents.data_collector_agent - INFO - Task task_collect completed successfully
+2026-10-11 10:03:38,041 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-11 10:03:38,041 - agents.quality_assurance_agent - INFO - Starting task task_qa
+2026-10-11 10:03:38,074 - agents.quality_assurance_agent - INFO - Task task_qa completed successfully
+2026-10-11 10:03:38,075 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-11 10:03:38,082 - agents.data_processor_agent - INFO - Starting task task_process
+2026-10-11 10:03:38,090 - agents.data_processor_agent - INFO - Task task_process completed successfully
+2026-10-11 10:03:38,098 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-11 10:03:38,102 - agents.analyzer_agent - INFO - Starting task task_analyze
+2026-10-11 10:03:46,271 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-11 10:03:46,271 - agents.analyzer_agent - INFO - Task task_analyze completed successfully
+2026-10-11 10:03:46,283 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-11 10:03:46,287 - agents.insight_generator_agent - INFO - Starting task task_insights
+2026-10-11 10:03:46,287 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-11 10:03:46,287 - agents.insight_generator_agent - INFO - Task task_insights completed successfully
+2026-10-11 10:03:46,287 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-11 10:03:46,299 - agents.visualization_agent - INFO - Starting task task_viz
+2026-10-11 10:03:46,301 - agents.visualization_agent - WARNING - No data available for dashboard
+2026-10-11 10:03:46,337 - agents.visualization_agent - INFO - Report created: output\report_20261011_100346.html
+2026-10-11 10:03:46,337 - agents.visualization_agent - INFO - Task task_viz completed successfully
+2026-10-11 10:03:46,342 - agents.visualization_agent - INFO - Created 1 visualizations
+2026-10-14 10:13:09,696 - example - INFO - Sample data created: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-14 10:13:09,702 - agents.orchestrator_agent - INFO - Orchestrator Agent initialized
+2026-10-14 10:13:09,705 - agents.orchestrator_agent - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'size_bytes': 45008, 'source': 'file', 'is_streaming': False, 'file_path': 'C:\\Users\\addy1\\OneDrive\\Documents\\Project\\Travo\\data\\sample_customers.csv'}
+2026-10-14 10:13:09,718 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-14 10:13:09,721 - agents.orchestrator_agent - INFO - Workflow workflow_82fe8bac3397 created with pipeline: small_structured
+2026-10-14 10:13:09,727 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-14 10:13:09,727 - agents.data_collector_agent - INFO - Starting task task_collect
+2026-10-14 10:13:09,727 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-14 10:13:09,731 - agents.data_collector_agent - INFO - Reading file: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-14 10:13:09,783 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-14 10:13:09,785 - agents.data_collector_agent - INFO - Task task_collect completed successfully
+2026-10-14 10:13:10,403 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-14 10:13:10,403 - agents.quality_assurance_agent - INFO - Starting task task_qa
+2026-10-14 10:13:10,468 - agents.quality_assurance_agent - INFO - Task task_qa completed successfully
+2026-10-14 10:13:10,473 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-14 10:13:10,473 - agents.data_processor_agent - INFO - Starting task task_process
+2026-10-14 10:13:10,492 - agents.data_processor_agent - INFO - Task task_process completed successfully
+2026-10-14 10:13:10,497 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-14 10:13:10,499 - agents.analyzer_agent - INFO - Starting task task_analyze
+2026-10-14 10:13:38,091 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-14 10:13:38,091 - agents.analyzer_agent - INFO - Task task_analyze completed successfully
+2026-10-14 10:13:38,098 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-14 10:13:38,098 - agents.insight_generator_agent - INFO - Starting task task_insights
+2026-10-14 10:13:38,100 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-14 10:13:38,102 - agents.insight_generator_agent - INFO - Task task_insights completed successfully
+2026-10-14 10:13:38,106 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-14 10:13:38,106 - agents.visualization_agent - INFO - Starting task task_viz
+2026-10-14 10:13:38,124 - agents.visualization_agent - WARNING - No data available for dashboard
+2026-10-14 10:13:38,134 - agents.visualization_agent - INFO - Report created: output\report_20261014_101338.html
+2026-10-14 10:13:38,136 - agents.visualization_agent - INFO - Task task_viz completed successfully
+2026-10-14 10:13:38,140 - agents.visualization_agent - INFO - Created 1 visualizations
+2026-10-14 10:23:41,688 - example - INFO - Sample data created: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-14 10:23:41,693 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-14 10:23:41,695 - agents.data_collector_agent - INFO - Starting task simple_task
+2026-10-14 10:23:41,705 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-14 10:23:41,706 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-14 10:23:41,709 - agents.data_collector_agent - INFO - Reading file: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-14 10:23:41,735 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-14 10:23:41,735 - agents.data_collector_agent - INFO - Task simple_task completed successfully
+2026-10-14 10:24:19,668 - example - INFO - Sample data created: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-14 10:24:19,669 - agents.orchestrator_agent - INFO - Orchestrator Agent initialized
+2026-10-14 10:24:19,669 - agents.orchestrator_agent - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'size_bytes': 45008, 'source': 'file', 'is_streaming': False, 'file_path': 'C:\\Users\\addy1\\OneDrive\\Documents\\Project\\Travo\\data\\sample_customers.csv'}
+2026-10-14 10:24:19,684 - utils.redis_client - INFO - Connected to Redis at localhost:6379
+2026-10-14 10:24:19,687 - agents.orchestrator_agent - INFO - Workflow workflow_664d995db91c created with pipeline: small_structured
+2026-10-14 10:24:19,694 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-14 10:24:19,694 - agents.data_collector_agent - INFO - Starting task task_collect
+2026-10-14 10:24:19,694 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-14 10:24:19,700 - agents.data_collector_agent - INFO - Reading file: C:\Users\addy1\OneDrive\Documents\Project\Travo\data\sample_customers.csv
+2026-10-14 10:24:19,736 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-14 10:24:19,747 - agents.data_collector_agent - INFO - Task task_collect completed successfully
+2026-10-14 10:24:19,756 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-14 10:24:19,756 - agents.quality_assurance_agent - INFO - Starting task task_qa
+2026-10-14 10:24:19,800 - agents.quality_assurance_agent - INFO - Task task_qa completed successfully
+2026-10-14 10:24:19,807 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-14 10:24:19,807 - agents.data_processor_agent - INFO - Starting task task_process
+2026-10-14 10:24:19,834 - agents.data_processor_agent - INFO - Task task_process completed successfully
+2026-10-14 10:24:19,845 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-14 10:24:19,847 - agents.analyzer_agent - INFO - Starting task task_analyze
+2026-10-14 10:24:21,817 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-14 10:24:21,817 - agents.analyzer_agent - INFO - Task task_analyze completed successfully
+2026-10-14 10:24:21,829 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-14 10:24:21,829 - agents.insight_generator_agent - INFO - Starting task task_insights
+2026-10-14 10:24:21,832 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-14 10:24:21,832 - agents.insight_generator_agent - INFO - Task task_insights completed successfully
+2026-10-14 10:24:21,832 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-14 10:24:21,832 - agents.visualization_agent - INFO - Starting task task_viz
+2026-10-14 10:24:21,841 - agents.visualization_agent - WARNING - No data available for dashboard
+2026-10-14 10:24:21,841 - agents.visualization_agent - INFO - Report created: output\report_20261014_102421.html
+2026-10-14 10:24:21,841 - agents.visualization_agent - INFO - Task task_viz completed successfully
+2026-10-14 10:24:21,845 - agents.visualization_agent - INFO - Created 1 visualizations
+2026-10-15 04:39:01,506 - example - INFO - Sample data created: /app/data/sample_customers.csv
+2026-10-15 04:39:01,520 - agents.orchestrator_agent - INFO - Orchestrator Agent initialized
+2026-10-15 04:39:01,526 - agents.orchestrator_agent - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'size_bytes': 44009, 'source': 'file', 'is_streaming': False, 'file_path': '/app/data/sample_customers.csv'}
+2026-10-15 04:39:01,556 - utils.redis_client - INFO - Connected to Redis at redis:6379
+2026-10-15 04:39:01,562 - agents.orchestrator_agent - INFO - Workflow workflow_3c7529896203 created with pipeline: small_structured
+2026-10-15 04:39:01,571 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-15 04:39:01,574 - agents.data_collector_agent - INFO - Starting task task_collect
+2026-10-15 04:39:01,579 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-15 04:39:01,584 - agents.data_collector_agent - INFO - Reading file: /app/data/sample_customers.csv
+2026-10-15 04:39:01,603 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-15 04:39:01,608 - agents.data_collector_agent - INFO - Task task_collect completed successfully
+2026-10-15 04:39:01,619 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-15 04:39:01,622 - agents.quality_assurance_agent - INFO - Starting task task_qa
+2026-10-15 04:39:01,654 - agents.quality_assurance_agent - INFO - Task task_qa completed successfully
+2026-10-15 04:39:01,665 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-15 04:39:01,668 - agents.data_processor_agent - INFO - Starting task task_process
+2026-10-15 04:39:01,683 - agents.data_processor_agent - INFO - Task task_process completed successfully
+2026-10-15 04:39:01,695 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-15 04:39:01,697 - agents.analyzer_agent - INFO - Starting task task_analyze
+2026-10-15 04:39:04,249 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-15 04:39:04,254 - agents.analyzer_agent - INFO - Task task_analyze completed successfully
+2026-10-15 04:39:04,271 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-15 04:39:04,274 - agents.insight_generator_agent - INFO - Starting task task_insights
+2026-10-15 04:39:04,282 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-15 04:39:04,289 - agents.insight_generator_agent - INFO - Task task_insights completed successfully
+2026-10-15 04:39:04,311 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-15 04:39:04,315 - agents.visualization_agent - INFO - Starting task task_viz
+2026-10-15 04:39:04,323 - agents.visualization_agent - WARNING - No data available for dashboard
+2026-10-15 04:39:04,338 - agents.visualization_agent - INFO - Report created: output/report_20261015_043904.html
+2026-10-15 04:39:04,343 - agents.visualization_agent - INFO - Task task_viz completed successfully
+2026-10-15 04:39:04,349 - agents.visualization_agent - INFO - Created 1 visualizations
+2026-10-15 04:42:07,057 - __main__ - INFO - Orchestrator Agent initialized
+2026-10-15 04:42:07,060 - __main__ - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'source': 'file', 'file_path': '/app/data/sample_customers.csv', 'size_bytes': 44009, 'is_streaming': False, 'analysis_type': 'classification'}
+2026-10-15 04:42:07,082 - utils.redis_client - INFO - Connected to Redis at redis:6379
+2026-10-15 04:42:07,089 - __main__ - INFO - Workflow workflow_e9b18274e09c created with pipeline: small_structured
+2026-10-15 04:42:07,093 - __main__ - INFO - Executing workflow workflow_e9b18274e09c
+2026-10-15 04:42:07,098 - __main__ - INFO - Executing stage 1/6: data_collector
+2026-10-15 04:42:09,357 - __main__ - INFO - Executing data_collector task task_34d6e417c152
+2026-10-15 04:42:09,366 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-15 04:42:09,376 - agents.data_collector_agent - INFO - Starting task task_34d6e417c152
+2026-10-15 04:42:09,383 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-15 04:42:09,390 - agents.data_collector_agent - INFO - Reading file: /app/data/sample_customers.csv
+2026-10-15 04:42:09,411 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-15 04:42:09,416 - agents.data_collector_agent - INFO - Task task_34d6e417c152 completed successfully
+2026-10-15 04:42:09,429 - __main__ - INFO - Executing stage 2/6: quality_assurance
+2026-10-15 04:42:09,440 - __main__ - INFO - Executing quality_assurance task task_72d6f25db5e6
+2026-10-15 04:42:09,448 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-15 04:42:09,451 - agents.quality_assurance_agent - INFO - Starting task task_72d6f25db5e6
+2026-10-15 04:42:09,486 - agents.quality_assurance_agent - INFO - Task task_72d6f25db5e6 completed successfully
+2026-10-15 04:42:09,503 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:09,506 - __main__ - INFO - Executing stage 3/6: data_processor
+2026-10-15 04:42:09,520 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:09,523 - __main__ - INFO - Executing data_processor task task_ac8d3ad77f62
+2026-10-15 04:42:09,529 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-15 04:42:09,531 - agents.data_processor_agent - INFO - Starting task task_ac8d3ad77f62
+2026-10-15 04:42:09,544 - agents.data_processor_agent - INFO - Task task_ac8d3ad77f62 completed successfully
+2026-10-15 04:42:09,556 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:09,559 - __main__ - INFO - Executing stage 4/6: analyzer
+2026-10-15 04:42:09,570 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:09,573 - __main__ - INFO - Executing analyzer task task_fb66b37f34c8
+2026-10-15 04:42:09,579 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-15 04:42:09,581 - agents.analyzer_agent - INFO - Starting task task_fb66b37f34c8
+2026-10-15 04:42:11,835 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-15 04:42:11,839 - agents.analyzer_agent - INFO - Task task_fb66b37f34c8 completed successfully
+2026-10-15 04:42:11,853 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:11,857 - __main__ - INFO - Executing stage 5/6: insight_generator
+2026-10-15 04:42:11,868 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:11,872 - __main__ - INFO - Executing insight_generator task task_58a6e3c4f789
+2026-10-15 04:42:11,881 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-15 04:42:11,888 - agents.insight_generator_agent - INFO - Starting task task_58a6e3c4f789
+2026-10-15 04:42:11,893 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-15 04:42:11,896 - agents.insight_generator_agent - INFO - Task task_58a6e3c4f789 completed successfully
+2026-10-15 04:42:11,912 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:11,917 - __main__ - INFO - Executing stage 6/6: visualization
+2026-10-15 04:42:11,932 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:11,938 - __main__ - INFO - Executing visualization task task_739664453f1b
+2026-10-15 04:42:11,952 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-15 04:42:11,956 - agents.visualization_agent - INFO - Starting task task_739664453f1b
+2026-10-15 04:42:13,893 - agents.visualization_agent - INFO - Dashboard created: output/dashboard_20261015_044213.html
+2026-10-15 04:42:14,483 - agents.visualization_agent - INFO - Report created: output/report_20261015_044214.html
+2026-10-15 04:42:14,501 - agents.visualization_agent - INFO - Task task_739664453f1b completed successfully
+2026-10-15 04:42:14,546 - agents.visualization_agent - INFO - Created 5 visualizations
+2026-10-15 04:42:14,572 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:14,601 - utils.redis_client - ERROR - Failed to set key workflow:workflow_e9b18274e09c: Object of type bool_ is not JSON serializable
+2026-10-15 04:42:14,620 - __main__ - INFO - Workflow workflow_e9b18274e09c completed successfully in 7.53s
+2026-10-15 04:42:51,309 - __main__ - INFO - Orchestrator Agent initialized
+2026-10-15 04:42:51,313 - __main__ - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'source': 'file', 'file_path': '/app/data/sample_customers.csv', 'size_bytes': 44009, 'is_streaming': False, 'analysis_type': 'classification'}
+2026-10-15 04:42:51,326 - utils.redis_client - INFO - Connected to Redis at redis:6379
+2026-10-15 04:42:51,334 - __main__ - INFO - Workflow workflow_98086d699f07 created with pipeline: small_structured
+2026-10-15 04:42:51,339 - __main__ - INFO - Executing workflow workflow_98086d699f07
+2026-10-15 04:42:51,344 - __main__ - INFO - Executing stage 1/6: data_collector
+2026-10-15 04:42:52,275 - __main__ - INFO - Executing data_collector task task_acd16fa79ea8
+2026-10-15 04:42:52,285 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-15 04:42:52,294 - agents.data_collector_agent - INFO - Starting task task_acd16fa79ea8
+2026-10-15 04:42:52,300 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-15 04:42:52,306 - agents.data_collector_agent - INFO - Reading file: /app/data/sample_customers.csv
+2026-10-15 04:42:52,327 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-15 04:42:52,332 - agents.data_collector_agent - INFO - Task task_acd16fa79ea8 completed successfully
+2026-10-15 04:42:52,346 - __main__ - INFO - Executing stage 2/6: quality_assurance
+2026-10-15 04:42:52,360 - __main__ - INFO - Executing quality_assurance task task_bcca0b014e52
+2026-10-15 04:42:52,371 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-15 04:42:52,375 - agents.quality_assurance_agent - INFO - Starting task task_bcca0b014e52
+2026-10-15 04:42:52,416 - agents.quality_assurance_agent - INFO - Task task_bcca0b014e52 completed successfully
+2026-10-15 04:42:52,439 - __main__ - INFO - Executing stage 3/6: data_processor
+2026-10-15 04:42:52,459 - __main__ - INFO - Executing data_processor task task_72701284b051
+2026-10-15 04:42:52,471 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-15 04:42:52,475 - agents.data_processor_agent - INFO - Starting task task_72701284b051
+2026-10-15 04:42:52,496 - agents.data_processor_agent - INFO - Task task_72701284b051 completed successfully
+2026-10-15 04:42:52,526 - __main__ - INFO - Executing stage 4/6: analyzer
+2026-10-15 04:42:52,548 - __main__ - INFO - Executing analyzer task task_ea3e8862863e
+2026-10-15 04:42:52,556 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-15 04:42:52,559 - agents.analyzer_agent - INFO - Starting task task_ea3e8862863e
+2026-10-15 04:42:53,821 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-15 04:42:53,830 - agents.analyzer_agent - INFO - Task task_ea3e8862863e completed successfully
+2026-10-15 04:42:53,887 - __main__ - INFO - Executing stage 5/6: insight_generator
+2026-10-15 04:42:53,907 - __main__ - INFO - Executing insight_generator task task_c000737c9907
+2026-10-15 04:42:53,916 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-15 04:42:53,918 - agents.insight_generator_agent - INFO - Starting task task_c000737c9907
+2026-10-15 04:42:53,922 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-15 04:42:53,925 - agents.insight_generator_agent - INFO - Task task_c000737c9907 completed successfully
+2026-10-15 04:42:53,948 - __main__ - INFO - Executing stage 6/6: visualization
+2026-10-15 04:42:53,965 - __main__ - INFO - Executing visualization task task_bf0e6ce2daef
+2026-10-15 04:42:53,972 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-15 04:42:53,975 - agents.visualization_agent - INFO - Starting task task_bf0e6ce2daef
+2026-10-15 04:42:54,485 - agents.visualization_agent - INFO - Dashboard created: output/dashboard_20261015_044254.html
+2026-10-15 04:42:54,984 - agents.visualization_agent - INFO - Report created: output/report_20261015_044254.html
+2026-10-15 04:42:55,000 - agents.visualization_agent - INFO - Task task_bf0e6ce2daef completed successfully
+2026-10-15 04:42:55,014 - agents.visualization_agent - INFO - Created 5 visualizations
+2026-10-15 04:42:55,058 - __main__ - INFO - Workflow workflow_98086d699f07 completed successfully in 3.72s
+2026-10-15 04:44:00,677 - __main__ - INFO - Orchestrator Agent initialized
+2026-10-15 04:44:00,681 - __main__ - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'source': 'file', 'file_path': '/app/data/sample_customers.csv', 'size_bytes': 44009, 'is_streaming': False, 'analysis_type': 'classification'}
+2026-10-15 04:44:00,727 - utils.redis_client - INFO - Connected to Redis at redis:6379
+2026-10-15 04:44:00,735 - __main__ - INFO - Workflow workflow_96e9c7658534 created with pipeline: small_structured
+2026-10-15 04:44:00,740 - __main__ - INFO - Executing workflow workflow_96e9c7658534
+2026-10-15 04:44:00,746 - __main__ - INFO - Executing stage 1/6: data_collector
+2026-10-15 04:44:01,683 - __main__ - INFO - Executing data_collector task task_3f082391d433
+2026-10-15 04:44:01,695 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-15 04:44:01,702 - agents.data_collector_agent - INFO - Starting task task_3f082391d433
+2026-10-15 04:44:01,709 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-15 04:44:01,713 - agents.data_collector_agent - INFO - Reading file: /app/data/sample_customers.csv
+2026-10-15 04:44:01,737 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-15 04:44:01,743 - agents.data_collector_agent - INFO - Task task_3f082391d433 completed successfully
+2026-10-15 04:44:01,754 - __main__ - INFO - Executing stage 2/6: quality_assurance
+2026-10-15 04:44:01,766 - __main__ - INFO - Executing quality_assurance task task_014d37fe65e2
+2026-10-15 04:44:01,776 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-15 04:44:01,779 - agents.quality_assurance_agent - INFO - Starting task task_014d37fe65e2
+2026-10-15 04:44:01,812 - agents.quality_assurance_agent - INFO - Task task_014d37fe65e2 completed successfully
+2026-10-15 04:44:01,833 - __main__ - INFO - Executing stage 3/6: data_processor
+2026-10-15 04:44:01,847 - __main__ - INFO - Executing data_processor task task_e8a3e87174be
+2026-10-15 04:44:01,856 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-15 04:44:01,859 - agents.data_processor_agent - INFO - Starting task task_e8a3e87174be
+2026-10-15 04:44:01,875 - agents.data_processor_agent - INFO - Task task_e8a3e87174be completed successfully
+2026-10-15 04:44:01,903 - __main__ - INFO - Executing stage 4/6: analyzer
+2026-10-15 04:44:01,926 - __main__ - INFO - Executing analyzer task task_4c00ae0064c1
+2026-10-15 04:44:01,935 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-15 04:44:01,939 - agents.analyzer_agent - INFO - Starting task task_4c00ae0064c1
+2026-10-15 04:44:03,215 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-15 04:44:03,219 - agents.analyzer_agent - INFO - Task task_4c00ae0064c1 completed successfully
+2026-10-15 04:44:03,250 - __main__ - INFO - Executing stage 5/6: insight_generator
+2026-10-15 04:44:03,275 - __main__ - INFO - Executing insight_generator task task_7b8b221aafa7
+2026-10-15 04:44:03,285 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-15 04:44:03,288 - agents.insight_generator_agent - INFO - Starting task task_7b8b221aafa7
+2026-10-15 04:44:03,293 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-15 04:44:03,296 - agents.insight_generator_agent - INFO - Task task_7b8b221aafa7 completed successfully
+2026-10-15 04:44:03,321 - __main__ - INFO - Executing stage 6/6: visualization
+2026-10-15 04:44:03,344 - __main__ - INFO - Executing visualization task task_5e12b17222c8
+2026-10-15 04:44:03,354 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-15 04:44:03,357 - agents.visualization_agent - INFO - Starting task task_5e12b17222c8
+2026-10-15 04:44:03,916 - agents.visualization_agent - INFO - Dashboard created: output/dashboard_20261015_044403.html
+2026-10-15 04:44:04,468 - agents.visualization_agent - INFO - Report created: output/report_20261015_044404.html
+2026-10-15 04:44:04,495 - agents.visualization_agent - INFO - Task task_5e12b17222c8 completed successfully
+2026-10-15 04:44:04,515 - agents.visualization_agent - INFO - Created 5 visualizations
+2026-10-15 04:44:04,568 - __main__ - INFO - Workflow workflow_96e9c7658534 completed successfully in 3.83s
+2026-10-15 04:45:10,483 - __main__ - INFO - Orchestrator Agent initialized
+2026-10-15 04:45:10,486 - __main__ - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'source': 'file', 'file_path': '/app/data/sample_customers.csv', 'size_bytes': 44009, 'is_streaming': False, 'analysis_type': 'classification'}
+2026-10-15 04:45:10,524 - utils.redis_client - INFO - Connected to Redis at redis:6379
+2026-10-15 04:45:10,537 - __main__ - INFO - Workflow workflow_6cdb840dc336 created with pipeline: small_structured
+2026-10-15 04:45:10,541 - __main__ - INFO - Executing workflow workflow_6cdb840dc336
+2026-10-15 04:45:10,545 - __main__ - INFO - Executing stage 1/6: data_collector
+2026-10-15 04:45:11,328 - __main__ - INFO - Executing data_collector task task_c62864311a49
+2026-10-15 04:45:11,337 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-15 04:45:11,346 - agents.data_collector_agent - INFO - Starting task task_c62864311a49
+2026-10-15 04:45:11,352 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-15 04:45:11,357 - agents.data_collector_agent - INFO - Reading file: /app/data/sample_customers.csv
+2026-10-15 04:45:11,376 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-15 04:45:11,383 - agents.data_collector_agent - INFO - Task task_c62864311a49 completed successfully
+2026-10-15 04:45:11,397 - __main__ - INFO - Executing stage 2/6: quality_assurance
+2026-10-15 04:45:11,407 - __main__ - INFO - Executing quality_assurance task task_b553237bbb63
+2026-10-15 04:45:11,414 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-15 04:45:11,417 - agents.quality_assurance_agent - INFO - Starting task task_b553237bbb63
+2026-10-15 04:45:11,447 - agents.quality_assurance_agent - INFO - Task task_b553237bbb63 completed successfully
+2026-10-15 04:45:11,469 - __main__ - INFO - Executing stage 3/6: data_processor
+2026-10-15 04:45:11,486 - __main__ - INFO - Executing data_processor task task_25d4ce852d85
+2026-10-15 04:45:11,495 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-15 04:45:11,499 - agents.data_processor_agent - INFO - Starting task task_25d4ce852d85
+2026-10-15 04:45:11,519 - agents.data_processor_agent - INFO - Task task_25d4ce852d85 completed successfully
+2026-10-15 04:45:11,546 - __main__ - INFO - Executing stage 4/6: analyzer
+2026-10-15 04:45:11,577 - __main__ - INFO - Executing analyzer task task_3f97deac9c94
+2026-10-15 04:45:11,588 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-15 04:45:11,592 - agents.analyzer_agent - INFO - Starting task task_3f97deac9c94
+2026-10-15 04:45:12,693 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-15 04:45:12,697 - agents.analyzer_agent - INFO - Task task_3f97deac9c94 completed successfully
+2026-10-15 04:45:12,726 - __main__ - INFO - Executing stage 5/6: insight_generator
+2026-10-15 04:45:12,752 - __main__ - INFO - Executing insight_generator task task_7a1f87517c37
+2026-10-15 04:45:12,763 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-15 04:45:12,767 - agents.insight_generator_agent - INFO - Starting task task_7a1f87517c37
+2026-10-15 04:45:12,773 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-15 04:45:12,776 - agents.insight_generator_agent - INFO - Task task_7a1f87517c37 completed successfully
+2026-10-15 04:45:12,811 - __main__ - INFO - Executing stage 6/6: visualization
+2026-10-15 04:45:12,843 - __main__ - INFO - Executing visualization task task_ad48b807a472
+2026-10-15 04:45:12,918 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-15 04:45:12,922 - agents.visualization_agent - INFO - Starting task task_ad48b807a472
+2026-10-15 04:45:13,385 - agents.visualization_agent - INFO - Dashboard created: output/dashboard_20261015_044513.html
+2026-10-15 04:45:13,888 - agents.visualization_agent - INFO - Report created: output/report_20261015_044513.html
+2026-10-15 04:45:13,900 - agents.visualization_agent - INFO - Task task_ad48b807a472 completed successfully
+2026-10-15 04:45:13,925 - agents.visualization_agent - INFO - Created 5 visualizations
+2026-10-15 04:45:13,973 - __main__ - INFO - Workflow workflow_6cdb840dc336 completed successfully in 3.43s
+2026-10-16 02:58:44,356 - __main__ - INFO - Orchestrator Agent initialized
+2026-10-16 02:58:44,360 - __main__ - INFO - Creating workflow for data: {'type': 'structured', 'format': 'csv', 'source': 'file', 'file_path': '/app/data/sample_customers.csv', 'size_bytes': 44009, 'is_streaming': False, 'analysis_type': 'classification'}
+2026-10-16 02:58:44,391 - utils.redis_client - INFO - Connected to Redis at redis:6379
+2026-10-16 02:58:44,398 - __main__ - INFO - Workflow workflow_7d7997e2a5e3 created with pipeline: small_structured
+2026-10-16 02:58:44,401 - __main__ - INFO - Executing workflow workflow_7d7997e2a5e3
+2026-10-16 02:58:44,406 - __main__ - INFO - Executing stage 1/6: data_collector
+2026-10-16 02:58:46,653 - __main__ - INFO - Executing data_collector task task_d7720168aa9d
+2026-10-16 02:58:46,664 - agents.data_collector_agent - INFO - Data Collector Agent initialized
+2026-10-16 02:58:46,673 - agents.data_collector_agent - INFO - Starting task task_d7720168aa9d
+2026-10-16 02:58:46,681 - agents.data_collector_agent - INFO - Collecting data from source: file
+2026-10-16 02:58:46,687 - agents.data_collector_agent - INFO - Reading file: /app/data/sample_customers.csv
+2026-10-16 02:58:46,713 - agents.data_collector_agent - INFO - Collected 1000 records from file
+2026-10-16 02:58:46,720 - agents.data_collector_agent - INFO - Task task_d7720168aa9d completed successfully
+2026-10-16 02:58:46,736 - __main__ - INFO - Executing stage 2/6: quality_assurance
+2026-10-16 02:58:46,747 - __main__ - INFO - Executing quality_assurance task task_746b50d5d2a9
+2026-10-16 02:58:46,757 - agents.quality_assurance_agent - INFO - Quality Assurance Agent initialized
+2026-10-16 02:58:46,761 - agents.quality_assurance_agent - INFO - Starting task task_746b50d5d2a9
+2026-10-16 02:58:46,807 - agents.quality_assurance_agent - INFO - Task task_746b50d5d2a9 completed successfully
+2026-10-16 02:58:46,827 - __main__ - INFO - Executing stage 3/6: data_processor
+2026-10-16 02:58:46,842 - __main__ - INFO - Executing data_processor task task_9ba43ec68f1b
+2026-10-16 02:58:46,851 - agents.data_processor_agent - INFO - Data Processor Agent initialized
+2026-10-16 02:58:46,855 - agents.data_processor_agent - INFO - Starting task task_9ba43ec68f1b
+2026-10-16 02:58:46,873 - agents.data_processor_agent - INFO - Task task_9ba43ec68f1b completed successfully
+2026-10-16 02:58:46,901 - __main__ - INFO - Executing stage 4/6: analyzer
+2026-10-16 02:58:46,926 - __main__ - INFO - Executing analyzer task task_eceee87a7cde
+2026-10-16 02:58:46,937 - agents.analyzer_agent - INFO - Analyzer Agent initialized
+2026-10-16 02:58:46,941 - agents.analyzer_agent - INFO - Starting task task_eceee87a7cde
+2026-10-16 02:58:48,962 - agents.analyzer_agent - INFO - Classification completed with accuracy: 83.50%
+2026-10-16 02:58:48,967 - agents.analyzer_agent - INFO - Task task_eceee87a7cde completed successfully
+2026-10-16 02:58:48,999 - __main__ - INFO - Executing stage 5/6: insight_generator
+2026-10-16 02:58:49,024 - __main__ - INFO - Executing insight_generator task task_f63cd55a4262
+2026-10-16 02:58:49,036 - agents.insight_generator_agent - INFO - Insight Generator Agent initialized
+2026-10-16 02:58:49,040 - agents.insight_generator_agent - INFO - Starting task task_f63cd55a4262
+2026-10-16 02:58:49,046 - agents.insight_generator_agent - INFO - Generated 3 insights
+2026-10-16 02:58:49,054 - agents.insight_generator_agent - INFO - Task task_f63cd55a4262 completed successfully
+2026-10-16 02:58:49,080 - __main__ - INFO - Executing stage 6/6: visualization
+2026-10-16 02:58:49,105 - __main__ - INFO - Executing visualization task task_a3dfe513ec49
+2026-10-16 02:58:49,136 - agents.visualization_agent - INFO - Visualization Agent initialized
+2026-10-16 02:58:49,141 - agents.visualization_agent - INFO - Starting task task_a3dfe513ec49
+2026-10-16 02:58:50,886 - agents.visualization_agent - INFO - Dashboard created: output/dashboard_20261016_025850.html
+2026-10-16 02:58:51,524 - agents.visualization_agent - INFO - Report created: output/report_20261016_025851.html
+2026-10-16 02:58:51,542 - agents.visualization_agent - INFO - Task task_a3dfe513ec49 completed successfully
+2026-10-16 02:58:51,559 - agents.visualization_agent - INFO - Created 5 visualizations
+2026-10-16 02:58:51,615 - __main__ - INFO - Workflow workflow_7d7997e2a5e3 completed successfully in 7.21s
